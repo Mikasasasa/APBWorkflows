@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow", "Workflow\Workfl
 		{14AB4118-25CC-4315-B668-9F938F667F50} = {14AB4118-25CC-4315-B668-9F938F667F50}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "..\..\..\..\Documents\Visual Studio 2013\Projects\APB\WcfService1\WcfService1\WcfService1.csproj", "{14AB4118-25CC-4315-B668-9F938F667F50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1\WcfService1.csproj", "{14AB4118-25CC-4315-B668-9F938F667F50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

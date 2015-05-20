@@ -61,7 +61,7 @@
         <OutArgument x:TypeArguments="wc:ChooseBestSubscriptionResponse1">
           <VariableReference x:TypeArguments="wc:ChooseBestSubscriptionResponse1">
             <VariableReference.Variable>
-              <Variable x:TypeArguments="wc:ChooseBestSubscriptionResponse1" x:Name="__ReferenceID1" Name="tempResult_0a2d166e46b84196a40c9b9efe374bfe" />
+              <Variable x:TypeArguments="wc:ChooseBestSubscriptionResponse1" x:Name="__ReferenceID1" Name="tempResult_136bae9e97ae49c2b69940384ff503bc" />
             </VariableReference.Variable>
           </VariableReference>
         </OutArgument>
@@ -72,7 +72,7 @@
         <OutArgument x:TypeArguments="wc:ChooseBestSubscriptionResponse">[ChooseBestSubscriptionResponse]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="wc:ChooseBestSubscriptionResponse">[tempResult_0a2d166e46b84196a40c9b9efe374bfe.ChooseBestSubscriptionResponse]</InArgument>
+        <InArgument x:TypeArguments="wc:ChooseBestSubscriptionResponse">[tempResult_136bae9e97ae49c2b69940384ff503bc.ChooseBestSubscriptionResponse]</InArgument>
       </Assign.Value>
     </Assign>
     <sads:DebugSymbol.Symbol>d64BQzpcVXNlcnNcTWF0ZXVzelxTb3VyY2VcUmVwb3NcQVBCV29ya2Zsb3dzXFdvcmtGbG93QVBCXFdvcmtmbG93XFNlcnZpY2UgUmVmZXJlbmNlc1xDaG9vc2VCZXN0U3Vic2NyaXB0aW9uXFdvcmtmbG93LkNob29zZUJlc3RTdWJzY3JpcHRpb24uSVNlcnZpY2UuQ2hvb3NlQmVzdFN1YnNjcmlwdGlvbi54YW1sCSEDTw4CAQEmBToPAgEKOwVFFwIBB0YFTQ4CAQI1STXKAQIBDCsPLx8CAQs+C0IfAgEJS0lLlQECAQVISkhqAgED</sads:DebugSymbol.Symbol>
