@@ -13,24 +13,35 @@ namespace WcfService1
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public ChooseBestSubscriptionResponse ChooseBestSubscription(ChooseBestSubscriptionRequest request)
-        {
-            throw new NotImplementedException();
-        }
+        //public ChooseBestSubscriptionResponse ChooseBestSubscription(ChooseBestSubscriptionRequest request)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public CreateClientAccountResponse CreateClientAccount(CreateClientAccountRequest request)
         {
-            throw new NotImplementedException();
+            var response = new CreateClientAccountResponse();
+            if (request.Name.Length > 3 && request.Surname.Length > 3 &&
+                (request.BirthDate - DateTime.Now).TotalDays/365 > 18)
+            {
+                var rnd = new Random();
+                response.Id = rnd.Next(1, 50000);
+            }
+            else
+            {
+                throw new Exception("Data isn't valid.");
+            }
+            return response;
         }
 
         public SaveClientSurveyResponse SaveClientSurvey(SaveClientSurveyRequest request)
         {
-            throw new NotImplementedException();
+            return new SaveClientSurveyResponse {Result = true};
         }
 
         public SaveSubscriptionResponse SaveSubscription(SaveSubscriptionRequest request)
         {
-            throw new NotImplementedException();
+            return new SaveSubscriptionResponse {Result = true};
         }
     }
 }

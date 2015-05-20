@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService1.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService1.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ChooseBestSubscriptionRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsWeekendIncluded" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsWholeDayImportant" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TrainingsInWeek" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChooseBestSubscriptionRequest" nillable="true" type="tns:ChooseBestSubscriptionRequest" />
+  <xs:complexType name="ChooseBestSubscriptionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PlanName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChooseBestSubscriptionResponse" nillable="true" type="tns:ChooseBestSubscriptionResponse" />
+  <xs:complexType name="CreateClientAccountRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreateClientAccountRequest" nillable="true" type="tns:CreateClientAccountRequest" />
+  <xs:complexType name="CreateClientAccountResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreateClientAccountResponse" nillable="true" type="tns:CreateClientAccountResponse" />
+  <xs:complexType name="SaveClientSurveyRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Answers" nillable="true" type="tns:ArrayOfClientsSurveyQuestion" />
+      <xs:element minOccurs="0" name="ClientId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveClientSurveyRequest" nillable="true" type="tns:SaveClientSurveyRequest" />
+  <xs:complexType name="ArrayOfClientsSurveyQuestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientsSurveyQuestion" nillable="true" type="tns:ClientsSurveyQuestion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientsSurveyQuestion" nillable="true" type="tns:ArrayOfClientsSurveyQuestion" />
+  <xs:complexType name="ClientsSurveyQuestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Answer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientsSurveyQuestion" nillable="true" type="tns:ClientsSurveyQuestion" />
+  <xs:complexType name="SaveClientSurveyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveClientSurveyResponse" nillable="true" type="tns:SaveClientSurveyResponse" />
+  <xs:complexType name="SaveSubscriptionRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientId" type="xs:int" />
+      <xs:element minOccurs="0" name="SubscriptionEnd" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SubscriptionStart" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SubscriptionType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveSubscriptionRequest" nillable="true" type="tns:SaveSubscriptionRequest" />
+  <xs:complexType name="SaveSubscriptionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveSubscriptionResponse" nillable="true" type="tns:SaveSubscriptionResponse" />
+</xs:schema>
