@@ -13,27 +13,46 @@ namespace TrainingMeetingService
     {
         public SaveDietAndTrainingPlanResponse SaveDietAndTrainingPlan(SaveDietAndTrainingPlanRequest request)
         {
-            throw new NotImplementedException();
+            if (request.Diet.Length < 200)
+            {
+                throw new Exception("Diet is not valid");
+            }
+            else if (request.TrainingPlan.Length < 300)
+            {
+                throw new Exception("Training Plan is not valid");
+            }
+
+            return new SaveDietAndTrainingPlanResponse { Result = true };
         }
 
         public SendClientNotificationResponse SendClientNotification(SendClientNotificationRequest request)
         {
-            throw new NotImplementedException();
+            return new SendClientNotificationResponse { Result = true };
         }
 
         public ProposeDatesResponse ProposeDates(ProposeDatesRequest request)
         {
-            throw new NotImplementedException();
+            var availableDays = new List<DateTime>();
+            for (var i = 0; i < 3; ++i)
+            {
+                availableDays.Add(new DateTime().AddDays(i));
+            }
+            return new ProposeDatesResponse { ProposedDateTimes = availableDays.ToArray() };
         }
 
         public SaveChosenDateResponse SaveChosenDate(SaveChosenDateRequest request)
         {
-            throw new NotImplementedException();
+            return new SaveChosenDateResponse { Result = true };
         }
 
         public SaveChangesToDietResponse SaveChangesToDiet(SaveChangesToDietRequest request)
         {
-            throw new NotImplementedException();
+            if (request.NewDietText.Length < 300)
+            {
+                throw new Exception("Diet is not valid");
+            }
+
+            return new SaveChangesToDietResponse { Result = true };
         }
     }
 }
