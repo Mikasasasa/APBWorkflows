@@ -13,8 +13,8 @@ namespace WcfService1
     public interface IService1
     {
 
-        [OperationContract]
-        ChooseBestSubscriptionResponse ChooseBestSubscription(ChooseBestSubscriptionRequest request);
+        //[OperationContract]
+        //ChooseBestSubscriptionResponse ChooseBestSubscription(ChooseBestSubscriptionRequest request);
 
         [OperationContract]
         CreateClientAccountResponse CreateClientAccount(CreateClientAccountRequest request);
