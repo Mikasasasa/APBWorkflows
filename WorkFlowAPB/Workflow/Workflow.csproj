@@ -42,6 +42,7 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Channels" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -236,6 +237,12 @@
     <XamlAppDef Include="Service References\TrainingMeetingService\Workflow.TrainingMeetingService.ITrainingMeetingService.SaveChangesToDiet.xaml">
       <Generator>MSBuild:Compile</Generator>
       <DependentUpon>Reference.svcmap</DependentUpon>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Workflow1 - Copy.xaml">
+      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </XamlAppDef>
   </ItemGroup>

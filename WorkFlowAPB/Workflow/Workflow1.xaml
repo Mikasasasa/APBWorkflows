@@ -33,27 +33,27 @@
         <p:Receive sap2010:WorkflowViewState.IdRef="Receive_1" OperationName="ChooseBestSubscription" />
       </Sequence>
     </Parallel>
-    <sads:DebugSymbol.Symbol>d05DOlxVc2Vyc1xNYXRldXN6XFNvdXJjZVxSZXBvc1xBUEJXb3JrZmxvd3NcV29ya0Zsb3dBUEJcV29ya2Zsb3dcV29ya2Zsb3cxLnhhbWwEHgMlDgIBAR8FIxACAQIgByISAgEDIQkhaQIBBA==</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d0xDOlxVc2Vyc1xNaXN6eVxTb3VyY2VcUmVwb3NcQVBCV29ya2Zsb3dzXFdvcmtGbG93QVBCXFdvcmtmbG93XFdvcmtmbG93MS54YW1sBB4DJQ4CAQEfBSMQAgECIAciEgIBAyEJIWkCAQQ=</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="Receive_1" sap:VirtualizedContainerService.HintSize="255,86" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="277,210">
+      <sap2010:ViewStateData Id="Receive_1" sap:VirtualizedContainerService.HintSize="255,90" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="277,214">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Parallel_1" sap:VirtualizedContainerService.HintSize="391,256" />
-      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="413,380">
+      <sap2010:ViewStateData Id="Parallel_1" sap:VirtualizedContainerService.HintSize="391,260" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="413,384">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Workflow.Workflow1_1" sap:VirtualizedContainerService.HintSize="240,179" />
+      <sap2010:ViewStateData Id="Workflow.Workflow1_1" sap:VirtualizedContainerService.HintSize="453,464" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

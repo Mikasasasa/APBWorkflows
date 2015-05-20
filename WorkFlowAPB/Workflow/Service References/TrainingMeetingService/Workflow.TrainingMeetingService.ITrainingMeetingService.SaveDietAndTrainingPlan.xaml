@@ -61,7 +61,7 @@
         <OutArgument x:TypeArguments="wt:SaveDietAndTrainingPlanResponse1">
           <VariableReference x:TypeArguments="wt:SaveDietAndTrainingPlanResponse1">
             <VariableReference.Variable>
-              <Variable x:TypeArguments="wt:SaveDietAndTrainingPlanResponse1" x:Name="__ReferenceID1" Name="tempResult_513f3b08c2004d33bc9f13a842d990af" />
+              <Variable x:TypeArguments="wt:SaveDietAndTrainingPlanResponse1" x:Name="__ReferenceID1" Name="tempResult_29bb7a0b36674c87a382b2aa0a3610f3" />
             </VariableReference.Variable>
           </VariableReference>
         </OutArgument>
@@ -72,7 +72,7 @@
         <OutArgument x:TypeArguments="wt:SaveDietAndTrainingPlanResponse">[SaveDietAndTrainingPlanResult]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="wt:SaveDietAndTrainingPlanResponse">[tempResult_513f3b08c2004d33bc9f13a842d990af.SaveDietAndTrainingPlanResult]</InArgument>
+        <InArgument x:TypeArguments="wt:SaveDietAndTrainingPlanResponse">[tempResult_29bb7a0b36674c87a382b2aa0a3610f3.SaveDietAndTrainingPlanResult]</InArgument>
       </Assign.Value>
     </Assign>
     <sads:DebugSymbol.Symbol>d7wBQzpcVXNlcnNcTWlzenlcU291cmNlXFJlcG9zXEFQQldvcmtmbG93c1xXb3JrRmxvd0FQQlxXb3JrZmxvd1xTZXJ2aWNlIFJlZmVyZW5jZXNcVHJhaW5pbmdNZWV0aW5nU2VydmljZVxXb3JrZmxvdy5UcmFpbmluZ01lZXRpbmdTZXJ2aWNlLklUcmFpbmluZ01lZXRpbmdTZXJ2aWNlLlNhdmVEaWV0QW5kVHJhaW5pbmdQbGFuLnhhbWwJIQNPDgIBASYFOg8CAQo7BUUXAgEHRgVNDgIBAjVKNa0BAgEMKw8vHwIBCz4LQh8CAQlLSkuVAQIBBUhLSGoCAQM=</sads:DebugSymbol.Symbol>

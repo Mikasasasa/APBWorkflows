@@ -47,7 +47,7 @@ namespace TrainingMeetingService
 
         public SaveChangesToDietResponse SaveChangesToDiet(SaveChangesToDietRequest request)
         {
-            if (request.NewDietText.Length < 300)
+            if (request.NewDietText.Length > 0 && request.NewDietText.Length < 300)
             {
                 throw new Exception("Diet is not valid");
             }
