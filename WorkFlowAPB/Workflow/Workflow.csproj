@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\TrainingMeetingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <XamlAppDef Include="Workflow1.xaml">
@@ -88,6 +93,19 @@
     <None Include="Service References\ServiceReference1\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\TrainingMeetingService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrainingMeetingService\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrainingMeetingService\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrainingMeetingService\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrainingMeetingService\TrainingMeetingService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -95,6 +113,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ChooseBestSubscription\" />
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\TrainingMeetingService\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ChooseBestSubscription\ChooseBestSubscription.disco" />
@@ -162,6 +181,59 @@
   </ItemGroup>
   <ItemGroup>
     <XamlAppDef Include="Service References\ServiceReference1\Workflow.ServiceReference1.IService1.SaveSubscription.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainingMeetingService\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainingMeetingService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainingMeetingService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainingMeetingService\Reference.svcmap">
+      <Generator>Xaml Activity Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainingMeetingService\endpointConfigurationNameResolver.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Service References\TrainingMeetingService\Workflow.TrainingMeetingService.ITrainingMeetingService.SaveDietAndTrainingPlan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Service References\TrainingMeetingService\Workflow.TrainingMeetingService.ITrainingMeetingService.SendClientNotification.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Service References\TrainingMeetingService\Workflow.TrainingMeetingService.ITrainingMeetingService.ProposeDates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Service References\TrainingMeetingService\Workflow.TrainingMeetingService.ITrainingMeetingService.SaveChosenDate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Service References\TrainingMeetingService\Workflow.TrainingMeetingService.ITrainingMeetingService.SaveChangesToDiet.xaml">
       <Generator>MSBuild:Compile</Generator>
       <DependentUpon>Reference.svcmap</DependentUpon>
       <SubType>Designer</SubType>

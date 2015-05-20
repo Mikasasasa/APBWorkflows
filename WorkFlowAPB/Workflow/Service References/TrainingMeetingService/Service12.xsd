@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1332/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" />
+  <xs:element name="SaveDietAndTrainingPlan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="request" nillable="true" type="q1:SaveDietAndTrainingPlanRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveDietAndTrainingPlanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="SaveDietAndTrainingPlanResult" nillable="true" type="q2:SaveDietAndTrainingPlanResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendClientNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="request" nillable="true" type="q3:SendClientNotificationRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendClientNotificationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="SendClientNotificationResult" nillable="true" type="q4:SendClientNotificationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProposeDates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="request" nillable="true" type="q5:ProposeDatesRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProposeDatesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="ProposeDatesResult" nillable="true" type="q6:ProposeDatesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveChosenDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="request" nillable="true" type="q7:SaveChosenDateRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveChosenDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="SaveChosenDateResult" nillable="true" type="q8:SaveChosenDateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveChangesToDiet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="request" nillable="true" type="q9:SaveChangesToDietRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveChangesToDietResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" minOccurs="0" name="SaveChangesToDietResult" nillable="true" type="q10:SaveChangesToDietResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

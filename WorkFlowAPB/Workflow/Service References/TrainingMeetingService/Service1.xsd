@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TrainingMeetingService.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1332/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="SaveDietAndTrainingPlanRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Diet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrainingPlan" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveDietAndTrainingPlanRequest" nillable="true" type="tns:SaveDietAndTrainingPlanRequest" />
+  <xs:complexType name="SaveDietAndTrainingPlanResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveDietAndTrainingPlanResponse" nillable="true" type="tns:SaveDietAndTrainingPlanResponse" />
+  <xs:complexType name="SendClientNotificationRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Receiver" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendClientNotificationRequest" nillable="true" type="tns:SendClientNotificationRequest" />
+  <xs:complexType name="SendClientNotificationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendClientNotificationResponse" nillable="true" type="tns:SendClientNotificationResponse" />
+  <xs:complexType name="ProposeDatesRequest">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="ProposeDatesRequest" nillable="true" type="tns:ProposeDatesRequest" />
+  <xs:complexType name="ProposeDatesResponse">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ProposedDateTimes" nillable="true" type="q1:ArrayOfdateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProposeDatesResponse" nillable="true" type="tns:ProposeDatesResponse" />
+  <xs:complexType name="SaveChosenDateRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcceptedDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveChosenDateRequest" nillable="true" type="tns:SaveChosenDateRequest" />
+  <xs:complexType name="SaveChosenDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveChosenDateResponse" nillable="true" type="tns:SaveChosenDateResponse" />
+  <xs:complexType name="SaveChangesToDietRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NewDietText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveChangesToDietRequest" nillable="true" type="tns:SaveChangesToDietRequest" />
+  <xs:complexType name="SaveChangesToDietResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveChangesToDietResponse" nillable="true" type="tns:SaveChangesToDietResponse" />
+</xs:schema>
